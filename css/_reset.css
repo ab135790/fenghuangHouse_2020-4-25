@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button, select, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    /*// 禁止选择文字 // 去掉点击对象时默认的灰色半透明覆盖层(iOS)或者虚框(Android)*/
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+
+    border: none;
+    outline: none;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+}
+
+/*// 禁止文字自动调整大小(默认情况下旋转设备的时候文字大小会发生变化)// 字体抗锯齿*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased; // 字体抗锯齿
+    -moz-osx-font-smoothing: grayscale;
+}
+/*// 清除内阴影// 否则ios下输入框无法输入*/
+input, select, textarea {
+    border: none;
+    -webkit-appearance: none;
+    -webkit-user-select: auto !important;
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+address, caption, cite, code, dfn, th, var, i, em {
+    font-style: normal;
+}
+/*// 去掉firefox下此元素的边框*/
+abbr, acronym {
+    border: none;
+    font-variant: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+ins, a {
+    text-decoration: none;
+}
+/*// 禁用长按页面时的弹出菜单(iOS下有效)*/
+a, img {
+    -webkit-touch-callout: none;
+}
+img {
+    border: none;
+    /*display: block;*/
+    vertical-align: top;
+}
+/* // 去掉各table cell的边距并让其边重合*/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: " ";
+    overflow: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0;
+    *zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 通用间距 start */
+.mr10 {
+    margin-right: 10px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.mb50 {
+    margin-bottom: 50px !important;
+}
+.ml-180 {
+    margin-left: -180px;
+}
+.mr-180 {
+    margin-right: -180px;
+}
+.mtb20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.p10_20 {
+    padding: 10px 20px;
+}
+.plr20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.plr100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ellipsis_line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 14;
+    overflow: hidden;
+}
+/* 通用间距 end */
